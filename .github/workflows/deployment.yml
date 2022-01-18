@@ -17,9 +17,12 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install
-        
+
       - name: Build
         run: yarn build
+
+      - name: Copy index.html
+        run: mv src/index.html dist/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
