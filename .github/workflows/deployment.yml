@@ -21,9 +21,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Copy index.html
-        run: mv src/index.html dist/
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
